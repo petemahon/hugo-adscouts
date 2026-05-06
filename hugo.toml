@@ -1,0 +1,76 @@
+# 1st Abu Dhabi Scouts — Hugo site configuration.
+# This site is built with the british-scout-group theme.
+# Theme is included as a Git submodule under themes/british-scout-group.
+
+baseURL = "https://1stadscouts.org/"
+title   = "Welcome to Abu Dhabi Scouts"
+theme   = "british-scout-group"
+
+enableRobotsTXT = true
+
+# This theme is hardcoded to British English (en-GB). The <html lang="en-GB">
+# attribute is set in the theme's baseof.html — do not configure other locales.
+
+# Allow inline HTML in front-matter section content (needed for <strong>, <br>, etc.)
+[markup.goldmark.renderer]
+  unsafe = true
+
+[pagination]
+  pagerSize = 10
+
+# -----------------------------------------------------------------------------
+# Theme params — Group identity
+# -----------------------------------------------------------------------------
+[params]
+  palette         = "classic-purple"
+
+  description     = "Abu Dhabi Scouts provides fun and friendship, challenge and everyday adventure to over 300 young people in Abu Dhabi, that's boys and girls aged 6 to 18."
+
+  logo            = "images/scoutsad-linear-311x141.webp"
+  logoAlt         = "Abu Dhabi Scouts Logo"
+  favicon         = "favicon.png"
+  ogImage         = "images/og-image.png"
+
+  copyrightOwner  = "Abu Dhabi Scouts"
+  copyrightRights = "All Rights Reserved"
+  footerBg        = "dark"             # Scouts Navy footer (matches original)
+
+# -----------------------------------------------------------------------------
+# BSO membership notice — POR 3.2.1.1
+# This sets the host country and host scouting association referenced in the
+# notice rendered by the bso-membership section (and any standalone calls).
+# Wording lives in i18n strings; override in i18n/en.toml at site root if you
+# want different copy.
+# -----------------------------------------------------------------------------
+[params.bsoMembershipNotice]
+  enable                  = true
+  hostCountryName         = "the United Arab Emirates"
+  hostScoutingAssociation = "Emirates Scout Association"
+
+# -----------------------------------------------------------------------------
+# Top navigation — anchors into home page sections
+# -----------------------------------------------------------------------------
+[[menu.main]]
+  name   = "Join Us"
+  url    = "/#join"
+  weight = 10
+
+[[menu.main]]
+  name   = "6 - 18 Years"
+  url    = "/#sections"
+  weight = 20
+
+[[menu.main]]
+  name   = "18-25 Years"
+  url    = "/#network"
+  weight = 30
+
+[[menu.main]]
+  name   = "Volunteer with us"
+  url    = "/#volunteer"
+  weight = 40
+
+[[menu.main]]
+  name   = "Where we meet"
+  url    = "/#where-we-meet"
+  weight = 50
