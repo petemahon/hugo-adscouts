@@ -1,0 +1,3 @@
+[submodule "themes/british-scout-group"]
+	path = themes/british-scout-group
+	url = https://github.com/petemahon/hugo-british-scout-group.git
