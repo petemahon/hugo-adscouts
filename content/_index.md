@@ -38,35 +38,18 @@ description = "Abu Dhabi Scouts provides fun and friendship, challenge and every
 # -----------------------------------------------------------------------------
 # 3. Our Sections
 # -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+# 3. Our Sections — auto-renders the enabled UK Scout sections.
+# Toggle each on/off in [params.scoutSections] in hugo.toml.
+# -----------------------------------------------------------------------------
 [[sections]]
-  type     = "section-grid"
+  type     = "scout-sections"
   id       = "sections"
-  bg       = "tertiary"   # original adscouts: Forest Green section
+  bg       = "tertiary"   # Forest Green section
   title    = "Our Sections"
   subtitle = "There is a place in Scouts for almost all ages, either as a member of one of the sections below, or as a volunteer. Clicking the Learn More buttons below will take you to the UK Scouts website for further information.<br><br>Sections meet on weekday evenings, during school term-time. To see timings for each group, check the map further down the page."
   button_label = "Learn more"
   button_style = "primary"
-
-  [[sections.cards]]
-    logo  = "images/beavers-logo-multi-colour-png-661x661.webp"
-    alt   = "Logo for Beavers Section"
-    title = "<strong>6 to 8 years</strong>"
-    url   = "https://www.scouts.org.uk/beavers"
-  [[sections.cards]]
-    logo  = "images/cubs-logo-green-png-661x661.webp"
-    alt   = "Logo for Cubs Section"
-    title = "<strong>8 to 10 ½ years</strong>"
-    url   = "https://www.scouts.org.uk/cubs"
-  [[sections.cards]]
-    logo  = "images/scouts-logo-green-png-1-661x661.webp"
-    alt   = "Logo for Scouts Section"
-    title = "<strong>10 ½ to 14 years</strong>"
-    url   = "https://www.scouts.org.uk/scouts"
-  [[sections.cards]]
-    logo  = "images/explorers-logo-blue-png-1-661x661.webp"
-    alt   = "Logo for Explorers Section"
-    title = "<strong>14 to 18 years</strong>"
-    url   = "https://www.scouts.org.uk/explorers"
 
 # -----------------------------------------------------------------------------
 # 4. Who can join — BSO membership eligibility (POR 3.2.1.1)
@@ -103,7 +86,7 @@ description = "Abu Dhabi Scouts provides fun and friendship, challenge and every
       url   = "https://www.scouts.org.uk/network/awards/"
 
   [sections.image]
-    src = "images/network-logo-black-png-500x500.webp"
+    src = "images/sections/network.webp"
     alt = "Network Scouts Logo"
 
 # -----------------------------------------------------------------------------
@@ -116,7 +99,7 @@ description = "Abu Dhabi Scouts provides fun and friendship, challenge and every
   title_color = "secondary"   # Scouts Teal — matches the original adscouts
   text        = "Our amazing teams of helpers, Team Leads and Boards of Trustees are all volunteers.<br><br>We are always looking for more people to join us, and there are lots of options. Whether you have an hour every two months, or can give your time weekly, we <strong>need</strong> you.<br><br>It's time to embrace your next big adventure. Volunteer with Abu Dhabi Scouts and be the best role model.<br><br>Aged 18-25? You can volunteer too, as a member of the Scout Network.<br><br>Get in touch below to find out more."
   [sections.image]
-    src = "images/volunteer-1-1036x1465.webp"
+    src = "images/volunteer/role-model.webp"
     alt = "Volunteer with Abu Dhabi Scouts"
   [[sections.buttons]]
     label    = "I want to volunteer"

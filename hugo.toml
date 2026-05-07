@@ -48,6 +48,17 @@ enableRobotsTXT = true
   hostScoutingAssociation = "Emirates Scout Association"
 
 # -----------------------------------------------------------------------------
+# Scout Sections — toggle which sections your Group runs.
+# Logos ship with the theme; brand updates flow via theme submodule bumps.
+# -----------------------------------------------------------------------------
+[params.scoutSections]
+  squirrels = { enable = false }   # not running yet — flip to true to show
+  beavers   = { enable = true }
+  cubs      = { enable = true }
+  scouts    = { enable = true }
+  explorers = { enable = true }
+
+# -----------------------------------------------------------------------------
 # Top navigation — anchors into home page sections
 # -----------------------------------------------------------------------------
 [[menu.main]]
